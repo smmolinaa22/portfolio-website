@@ -1,0 +1,101 @@
+body{
+    background-color: #313030;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fbf9ea;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+h1{
+    font-size: 2.75em;
+    font-weight: 700;
+    color: #c5e1a2;
+}
+
+h2{
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #b6c9ea;                                   
+}
+
+h3{
+    font-size: 1.75em;
+    font-weight: 500;
+    color:  #e3af5c;
+}
+
+h4{
+    font-size: 1.35em;
+    font-weight: 400;
+    color: #fbf9ea;
+}
+
+img {
+    width: 100%
+}
+
+a{ 
+    color: #c5e1a2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #abb6e2
+}
+
+a:hover,
+a:focus {
+    color: #e3af5c;
+    text-decoration: underline;
+}
+
+a:active { /* selected link */
+    color: #fbf9ea
+}
+
+.button{ 
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbf9ea;
+    color: #313030;
+    font-weight: 400;
+    font-size: 1.15em;
+    padding: 20px;
+    margin: 4px, 8px;
+    border-radius: 12px;
+    border-bottom: 2px solid #e3af5c;
+    transition: 0.2s opacity;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:visited {
+    opacity: 0.8;
+    color: #313030;
+    text-decoration: none;
+}
+
+.button:active {
+    opacity: .4;
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: #e3af5c;
+    color: #313030;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fbf9ea;
+}
+
+.button.contact:hover {
+    opacity: 0.8
+}
+
+.button.contact:active {
+    opacity: .4
+}
