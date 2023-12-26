@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Waves Project</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <img src="img/logo.png" alt="Sarah Molina Logo">
         <nav>
             <ul>
@@ -18,95 +26,184 @@
         </nav>
     </header>
 
-    <main>
+    <main id="waves project">
         <div><div>
             <h1><span>Waves UX Design Case Study</span></h1>
-            <p>Waves is a water mobile app created to connect people with easy to understand wind, wave, and weather
-            information for quick decision making on their water days.</p>
+            <p>
+                Context: CareerFoundry UX Design Certificate
+                <br>
+                Roles: UX Design, User Research, Information Architecture
+                <br>
+                About: Waves is a water mobile app created to connect people with easy to understand wind, wave, and weather
+                information for quick decision making on their water days.
+            </p>
         </div></div>
 
         <div>
             <div>
-                <h2>My Work</h2>
+                <h1>The Process</h1>
                 <div>
                     <div>
-                        <picture>
-                            <source srcset="img/waves/1_cover.png" media="(max-width:767px)">
-                            <img src="img/waves/1_cover.png" alt="waves cover image">
-                        </picture>
+                        <h2>Research</h2>
+                        <h4>Who are we designing for and what do they need? We completed a competitive analysis, SWOT analysis, and user surveys to discover more.</h4>
+                        <h3>Key Research Insights</h3>
+                        <h4>Users needed a mobile app to access water weather conditions to enjoy their leisure water activities.</h4>
+                        <p>When completing our research, we learned:
+                            <ol>
+                                <li>No apps on the market currently cater to leisurely water goers (discovered via competitive analysis and SWOT)</li>
+                                <li>Majority of participants surveyed reported their primary purpose during water activities is for leisure (discovered via surveys)</li>
+                            </ol>
+                        </p>
+                        <!--add thumbnails to enlarge: competitive analysis, SWOT, and user interviews-->
+                    </div>
 
+                    <div>
+                        <h2>POV</h2>
+                        <p>Using the information and perspective gained from user interviews, we created personas to represent members of 
+                        our target audience. These personas helped us stay user-centered throughout our design process.</p>
+                        <!--add thumbnails to enlarge: personas-->
                         <picture>
-                            <source srcset="img/waves/2_about.png" media="(max-width:767px)">
-                            <img src="img/waves/2_about.png" alt="about waves project">
+                            <source srcset="img/waves/personas@1x.png" media="(max-width:767px)">
+                            <img src="img/waves/personas@2x.png" alt="waves user personas">
                         </picture>
+                    </div>
 
+                    <div>
+                        <h2>Ideation</h2>
+                        <h4>
+                            <ul>
+                                <li>user journey mapping</li>
+                                <li>creating user flows</li>
+                                <li>creating and refining our sitemap</li>
+                            </ul>
+                        </h4>
+                        <h3>User Journey Mapping</h3>
+                        <p>User journey mapping helped us to understand the thoughts, feelings, and emotions of our personas when 
+                            completing tasks. </p>
+                        <p>By empathizing with our users, we learned that the app needs to:
+                            <ul>
+                            <li>provide quick, accurate, and detailed weather and water conditions</li>
+                            <li>have trustworthy information from other users (i.e., reviews and pictures)</li>
+                            <li>have advanced filters so users can find the locations they want.</li>
+                            </ul>
+                        </p>
+                
+                        <h3>Creating User Flows and Refining Our Sitemap</h3>
+                        <p>We started creating user flows to visualize the steps of a task our user personas would take when using the app.</p>
+                        <!--add thumbnail or image of userflows-->
                         <picture>
-                            <source srcset="img/waves/3_whywaves.png" media="(max-width:767px)">
-                            <img src="img/waves/3_whywaves.png" alt="why waves">
+                            <source srcset="img/waves/userflows@1x.png" media="(max-width:767px)">
+                            <img src="img/waves/userflows@2x.png" alt="waves user flows">
                         </picture>
-
+                        <p>We then began expanding our product’s information architecture, creating a sitemap, which gave structure and 
+                        organization to our ideas.</p>
+                        <!--add thumbnail or pic of sitemap-->
                         <picture>
-                            <source srcset="img/waves/4_designprocess.png" media="(max-width:767px)">
-                            <img src="img/waves/4_designprocess.png" alt="waves design process">
+                            <source srcset="img/waves/sitemap@1x.png" media="(max-width:767px)">
+                            <img src="img/waves/sitemap@2x.png" alt="waves site map">
                         </picture>
+                    </div>
 
+                    <div>
+                        <h2>Wireframes</h2>
+                        <h4>With our sitemap created, we then created wireframes showcasing 3 core features:
+                            <ul>
+                                <li>Viewing Saved Locations</li>
+                                <li>Applying Filters during Search</li>
+                                <li>Reading Reviews</li>
+                            </ul>
+                        </h4>
+                        <p>Below is the progression of our Applying Filters during Search feature. We used pen and paper for our low 
+                        fidelity wireframes and Figma for the mid and high fidelity wireframes.</p>
+                        <!--add low to hifi progression, make thumbnail?-->
                         <picture>
-                            <source srcset="img/waves/5_keyresearchinsight.png" media="(max-width:767px)">
-                            <img src="img/waves/5_keyresearchinsight.png" alt="waves research">
+                            <source srcset="img/waves/wfprogression@1x.png" media="(max-width:767px)">
+                            <img src="img/waves/wfprogression@2x.png" alt="wireframe progression">
                         </picture>
+                    </div>
 
-                        <picture>
-                            <source srcset="img/waves/6_keyfindings.png" media="(max-width:767px)">
-                            <img src="img/waves/6_keyfindings.png" alt="waves key findings">
-                        </picture>
+                    <div>
+                        <h2>Usability Testing</h2>
+                        <p>After completing usability testing with our clickable prototype, we identified the top 5 issues our participants were 
+                        having. We then identified and implemented solutions to address these issues.</p>
+                        <div>
+                            <h4>1. Confusion with the hamburger menu function</h4>
+                            <p>Solution: Change hamburger menu to a settings menu with radio buttons or show/hide options within the settings 
+                            page.</p>
+                            <h4>2. Scrolling up/down is not obvious on scrollable pages</h4>
+                            <p>Solution: Place a scroll bar/scroll indicator on the right side of the page for scrollable pages, 
+                            specifically, the home and location pages.</p>
+                            <h4>3. Redundant buttons (i.e. filter icon and “more filters” drop down) may cause confusion with navigation</h4>
+                            <p>Solution: Change the current filter icon to a list view icon; keep the “more filters” drop down the same.</p>
+                            <h4>4. Prototype linking is not smooth when using the “applying filters” feature</h4>
+                            <p>Solution: Fix prototype linking in Figma to be more dynamic rather than linear. Some pages are not linked 
+                            correctly and do not fully represent the Search/Filters features.</p>
+                            <h4>5. Users cannot see pictures when looking at reviews / users cannot see reviews</h4> 
+                            <p>Solution: Place the user’s review under the enlarged picture / place thumbnails of pictures included with the 
+                            review in the Reviews tab.</p>
+                        </div>
+                    </div>
 
-                        <picture>
-                            <source srcset="img/waves/7_personas.png" media="(max-width:767px)">
-                            <img src="img/waves/7_personas.png" alt="user personas">
-                        </picture>
+                    <div>
+                        <h2>Iterative Design and Prototyping</h2>
+                        <p>Our design went through several iterations. We focused on fixing the identified issues, implementing design 
+                            principles, and increasing accessibility. We also improved our design via collaboration and feedback from 
+                            peers. Below is the progression of our Log In page following these iterations.</p>
+                            <!--add image/thumbnail of prototype iterations, change to thumbnail?-->
+                            <picture>
+                                <source srcset="img/waves/prototyping@1x.png" media="(max-width:767px)">
+                                <img src="img/waves/prototyping@2x.png" alt="waves site map">
+                            </picture>
+                    </div>
+            </div>
 
-                        <picture>
-                            <source srcset="img/waves/8_userjourneymapping.png" media="(max-width:767px)">
-                            <img src="img/waves/8_userjourneymapping.png" alt="user journey mapping">
-                        </picture>
+            <div>
+                </div>
+                    <h1>Final Product</h1>
+                    <h4>Below are our core features, demonstrated in the app.</h4>
+                    <!--add gifs-->
+                    <div>add gifs</div>
+                </div>
 
-                        <picture>
-                            <source srcset="img/waves/9_userflows.png" media="(max-width:767px)">
-                            <img src="img/waves/9_userflows.png" alt="user flows">
-                        </picture>
+                <div>
+                    <h2>Interactive Prototype</h2>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxFONZhtmTB1X4VGC1CgAH4%2FVela-(Waves)-UX-Design-Project---Sarah-Molina%3Fpage-id%3D72%253A16898%26node-id%3D72-16913%26starting-point-node-id%3D72%253A16913%26mode%3Ddesign%26t%3DilkngwfY4H1NeooT-1" allowfullscreen></iframe>
+                </div>
 
-                        <picture>
-                            <source srcset="img/waves/10_wireframing.png" media="(max-width:767px)">
-                            <img src="img/waves/10_wireframing.png" alt="wireframing">
-                        </picture>
+                <div>
+                    <h2>Reflection and Feedback</h2>
+                    <p>Developing Waves from start to finish was a rewarding and challenging process. I grew my strengths in using 
+                        different design tools (i.e. Figma), completing thorough user research, collaborative design with peers, 
+                        effectively managing time within a project, and prioritizing accessibility in design.
 
-                        <picture>
-                            <source srcset="img/waves/11_usabilitytesting.png" media="(max-width:767px)">
-                            <img src="img/waves/11_usabilitytesting.png" alt="usability testing">
-                        </picture>
+                        Moving forward, I now have a more systematic way of approaching new problems. I will be learning more about 
+                        accessibility in design, other design software, and collaboration with other disciplines to further my design 
+                        growth and strengths.</p>
+                    <div>
+                        <h4>
+                            “This is a good app for those looking for niche water spots. It shows them what and where.”
+                            <br>
+                            “It’s really good about giving weather info and a location to influence where you go to do a water activity.”
+                            <br>
+                            “I love the feature to customize the home page!”
+                            <br>
+                            “The UI of the home page is beautiful.”
+                            <br>
+                            “I like this aesthetic very much. Playful and inviting.”
+                        </h4>
+                    </div>
+                </div>
 
-                        <picture>
-                            <source srcset="img/waves/12_prototyping.png" media="(max-width:767px)">
-                            <img src="img/waves/12_prototyping.png" alt="wireframing">
-                        </picture>
-
-                        <picture>
-                            <source srcset="img/waves/15_dls.png" media="(max-width:767px)">
-                            <img src="img/waves/15_dls.png" alt="wireframing">
-                        </picture>
-
-                        <picture>
-                            <source srcset="img/waves/16_reflection.png" media="(max-width:767px)">
-                            <img src="img/waves/16_reflection.png" alt="wireframing">
-                        </picture>
-                    </div>'
-                  
-
+                <div>
+                    <h2>Design Language System</h2>
+                    <p>We created a design language system and style guide to guide our UI choices. These tools helped our design stay 
+                        uniform and consistent from page to page. These tools also help communicate our design choices to other designers 
+                        or developers that may work on the project.</p>
+                    <!--add THUMBNAIL design language system-->
                 </div>
             </div>
         </div>
 
-       <br>
 
        
     </main>
@@ -117,10 +214,10 @@
     <footer id="contact">
         <a href="#contact">Contact</a>
         <div>
-            <h2>Get in Touch</h2>
+            <h1>Get in Touch</h1>
             <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="Tel:+12104623662">+1 2104623662</a> Prefer sending an email?</p>
                 <div>
-                    <a href="mailto:smolinaa22@gmail.com">Email me</a>
+                    <a href="mailto:smolinaa22@gmail.com" class="button contact">Email me</a>
                 </div>
 
                 <div>
