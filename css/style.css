@@ -1,3 +1,24 @@
+header {
+    background-color: #064343;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3)  ; 
+    }
+
+main {
+    padding-top: 100px;
+}
+
+footer {
+    padding-bottom: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #313030;
     font-family: 'Raleway', sans-serif;
@@ -14,29 +35,30 @@ h1, h2, h3, h4 {
 h1{
     font-size: 2.75em;
     font-weight: 700;
-    color: #c5e1a2;
+    color: #e3af5c;
 }
 
 h2{
     font-size: 2.25em;
     font-weight: 600;
-    color: #b6c9ea;                                   
+    color: #fbf9ea;                                  
 }
 
 h3{
     font-size: 1.75em;
     font-weight: 500;
-    color:  #e3af5c;
+    color: #c5e1a2;
 }
 
 h4{
     font-size: 1.35em;
     font-weight: 400;
-    color: #fbf9ea;
+    color: #fbf9ea; /* #EB9F9F */
 }
 
 img {
-    width: 100%
+    width: 100%;
+    border-radius: 20px;
 }
 
 a{ 
@@ -45,7 +67,7 @@ a{
 }
 
 a:visited {
-    color: #abb6e2
+    color: #fbf9ea;
 }
 
 a:hover,
@@ -55,7 +77,7 @@ a:focus {
 }
 
 a:active { /* selected link */
-    color: #fbf9ea
+    color: #eb9f9f; 
 }
 
 .button{ 
@@ -93,9 +115,105 @@ a:active { /* selected link */
 }
 
 .button.contact:hover {
-    opacity: 0.8
+    opacity: 0.8;
 }
 
 .button.contact:active {
-    opacity: .4
+    opacity: .4;
 }
+
+/* Layout styling */
+
+.container-1 {
+    max-width: 1200px;
+    padding: 12px;
+    padding-bottom: 20px;
+    border: 2px solid #fbf9ea;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 92%;
+    box-sizing: border-box;
+    /* margin: 0 ; */
+}
+
+.box.box-1 {
+    margin: 0 auto;
+}
+
+.row{
+    margin: 25px 0;
+}
+
+#work .row, #about .row, #waves .row, #final .row, #adastra .row {
+    padding-bottom:25px; border-bottom: 1px solid #4a4a4a;
+}
+
+#work {
+    text-align: center;
+}
+
+#hero {
+    background-color: 064343;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+}
+
+.center {
+    text-align: center;
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a { 
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fbf9ea;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    color:#e3af5c;
+    text-decoration: underline;
+}
+
+/*nav> ul > li > a:visited {
+    color: #eb9f9f;
+} turns nav links pink? */
+
+svg {
+    max-width: 200px; /* any other fixes? inline-block or scale depending on screen? make child or parent (footer)? not sure */
+}
+
+.logo {
+    width: 100%; /*why won't logo svg scale/get bigger?*/
+}
+
+footer {
+    background-color: #1A1919;
+    text-align: center;
+}
+
