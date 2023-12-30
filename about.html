@@ -16,7 +16,7 @@
 
 <body>
     <header id="header">
-        <div class="container">
+        <div class="container blue circlebehind">
             <svg id="logo" width="auto" height="100%" viewBox="0 0 515 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.384 51.51C20.664 51.51 18.607 50.745 17.213 49.215C15.819 47.651 15.122 45.424 15.122 42.534V40.494H20.426V42.942C20.426 45.254 21.395 46.41 23.333 46.41C24.285 46.41 24.999 46.138 25.475 45.594C25.985 45.016 26.24 44.098 26.24 42.84C26.24 41.344 25.9 40.035 25.22 38.913C24.54 37.757 23.282 36.38 21.446 34.782C19.134 32.742 17.519 30.906 16.601 29.274C15.683 27.608 15.224 25.738 15.224 23.664C15.224 20.842 15.938 18.666 17.366 17.136C18.794 15.572 20.868 14.79 23.588 14.79C26.274 14.79 28.297 15.572 29.657 17.136C31.051 18.666 31.748 20.876 31.748 23.766V25.245H26.444V23.409C26.444 22.185 26.206 21.301 25.73 20.757C25.254 20.179 24.557 19.89 23.639 19.89C21.769 19.89 20.834 21.029 20.834 23.307C20.834 24.599 21.174 25.806 21.854 26.928C22.568 28.05 23.843 29.41 25.679 31.008C28.025 33.048 29.64 34.901 30.524 36.567C31.408 38.233 31.85 40.188 31.85 42.432C31.85 45.356 31.119 47.6 29.657 49.164C28.229 50.728 26.138 51.51 23.384 51.51ZM39.2522 15.3H46.8512L52.6652 51H47.0552L46.0352 43.911V44.013H39.6602L38.6402 51H33.4382L39.2522 15.3ZM45.3722 39.168L42.8732 21.522H42.7712L40.3232 39.168H45.3722ZM55.3869 15.3H63.6999C66.5899 15.3 68.6979 15.98 70.0239 17.34C71.3499 18.666 72.0129 20.723 72.0129 23.511V25.704C72.0129 29.41 70.7889 31.756 68.3409 32.742V32.844C69.7009 33.252 70.6529 34.085 71.1969 35.343C71.7749 36.601 72.0639 38.284 72.0639 40.392V46.665C72.0639 47.685 72.0979 48.518 72.1659 49.164C72.2339 49.776 72.4039 50.388 72.6759 51H66.9639C66.7599 50.422 66.6239 49.878 66.5559 49.368C66.4879 48.858 66.4539 47.94 66.4539 46.614V40.086C66.4539 38.454 66.1819 37.315 65.6379 36.669C65.1279 36.023 64.2269 35.7 62.9349 35.7H60.9969V51H55.3869V15.3ZM63.0369 30.6C64.1589 30.6 64.9919 30.311 65.5359 29.733C66.1139 29.155 66.4029 28.186 66.4029 26.826V24.072C66.4029 22.78 66.1649 21.845 65.6889 21.267C65.2469 20.689 64.5329 20.4 63.5469 20.4H60.9969V30.6H63.0369ZM80.2912 15.3H87.8902L93.7042 51H88.0942L87.0742 43.911V44.013H80.6992L79.6792 51H74.4772L80.2912 15.3ZM86.4112 39.168L83.9122 21.522H83.8102L81.3622 39.168H86.4112ZM96.426 15.3H102.036V29.835H108.054V15.3H113.664V51H108.054V34.935H102.036V51H96.426V15.3Z" fill="#F7DD0E"/>
                 <rect x="14" y="58" width="104" height="40" rx="10" fill="#F7DD0E"/>
@@ -36,73 +36,74 @@
     </header>
 
     <main id="about-page">
-        <div id="hero">
-            <div class="container">
-                <h1>About</h1>
-            </div>
-        </div>
-
         <div id="about">
             <div class="container-1">
+                <h2><span>About</h2></span>
                 <picture id="profile">
                     <source srcset="img/about-page-img/about_me.png" media="(max-width:767px)">
                     <img class="profile" src="img/about-page-img/about_me.png" alt="about me picture">
                 </picture>
-                <div id="story">
-                    <div class="row">
-                        <h2>My Story</h2>
-                        <p>Hi there! My name is Sarah Molina, and I am a UX designer and occupational therapist (OT). 
+                
+                <div class="row" id="story">
+                    <!-- <div class="row"> -->
+                        <div class="col-md-6">
+                            <h3>My Story</h3>
+                            <p>Hi there! My name is Sarah Molina, and I am a UX designer and occupational therapist (OT).</p>
 
-                            I grew my passions for helping others, finding creative solutions to complex problems, and empowering both children and adults through my occupational therapy background. In the field of OT, we help people to complete activities that may be challenging for them, i.e.,
-                            <ul>
-                                <li>an elderly woman with arthritis having difficulty opening her medication bottles</li>
-                                <li>a child with CP having challenges playing with his friends due to motor and physical differences</li>
-                                <li>or a teenager with a progressive visual impairment wanting to learn to play the piano</li>
-                             </ul>
-                            by analyzing personal factors (i.e. motivations, needs, physical and cognitive limitations), environmental factors, and the occupation (what they are trying to accomplish). Through finding innovative and personalized solutions, we can make their experiences easier, more meaningful, memorable, and valuable.
-                            Through OT, I grew my critical thinking, problem-solving, empathy, and understanding of people’s needs, motivations, and behaviors from a broad and diverse population. However, I still wanted to grow in the areas of design, making designs accessible for all. With OT, sessions are typically 1:1; with technology, several lives can be impacted with just one good design.
+                                I grew my passions for helping others, finding creative solutions to complex problems, and empowering both children and adults through my occupational therapy background. In the field of OT, we help people to complete activities that may be challenging for them, i.e.,
+                                <ul>
+                                    <li>an elderly woman with arthritis having difficulty opening her medication bottles</li>
+                                    <li>a child with CP having challenges playing with his friends due to motor and physical differences</li>
+                                    <li>or a teenager with a progressive visual impairment wanting to learn to play the piano</li>
+                                </ul>
+                                by analyzing personal factors (i.e. motivations, needs, physical and cognitive limitations), environmental factors, and the occupation (what they are trying to accomplish). Through finding innovative and personalized solutions, we can make their experiences easier, more meaningful, memorable, and valuable.
+                                Through OT, I grew my critical thinking, problem-solving, empathy, and understanding of people’s needs, motivations, and behaviors from a broad and diverse population. However, I still wanted to grow in the areas of design, making designs accessible for all. With OT, sessions are typically 1:1; with technology, several lives can be impacted with just one good design.
                            
-                            My UX design journey has consisted of: 
-                            <ul>
-                                <li>empathizing with users, looking through their lens to discover problems and pain points when completing certain tasks</li>
-                                <li>finding solutions to these problems</li>
-                                <li>and using iterative design, testing, and research to solidify these solutions.</li>
-                            </ul>
-                            With my diverse background of understanding human psychology & motivations, accessibility, inclusion, and task analysis, I aim to create human-centered and accessibility-centered designs for all to enjoy.
+                                My UX design journey has consisted of: 
+                                <ul>
+                                    <li>empathizing with users, looking through their lens to discover problems and pain points when completing certain tasks</li>
+                                    <li>finding solutions to these problems</li>
+                                    <li>and using iterative design, testing, and research to solidify these solutions.</li>
+                                </ul>
+                                With my diverse background of understanding human psychology & motivations, accessibility, inclusion, and task analysis, I aim to create human-centered and accessibility-centered designs for all to enjoy.
                             
-                            <br>
-                            <br>
-                        <a href="/files/122023_resume.pdf" class="button" target="_blank">Download my resume</a>
-                    </div>
+                                <br>
+                                <br>
+                            <a href="/files/122023_resume.pdf" class="button" target="_blank">Download my resume</a>
+                        </div>
+                    <!-- </div> -->
 
-                    <div> <!--class="row"-->
-                        <h2>Skills & Tools</h2>
-                        <div>
-                            <h3>Relevant Skills</h3>
-                            <ul>
-                                <li>User-Centered Design</li>
-                                <li>Emotional and Visual Design</li>
-                                <li>Competitive Analysis</li>
-                                <li>Generative and Evaluative Research</li>
-                                <li>User Personas and Business Requirements</li>
-                                <li>Mobile-first and Responsive Design</li>
-                                <li>Information Architecture and User Flows</li>
-                                <li>Iterative Wireframing and Prototyping</li>
-                                <li>Usability and Preference Testing</li>
-                                <li>Design Documentation and Presentation</li>
-                            </ul>
+                    <!-- <div class="row"> -->
+                        <div class="col-md-6">
+                            <h3>Skills & Tools</h3>
+                            <div>
+                                <h4>Relevant Skills</h4>
+                                <ul>
+                                    <li>User-Centered Design</li>
+                                    <li>Emotional and Visual Design</li>
+                                    <li>Competitive Analysis</li>
+                                    <li>Generative and Evaluative Research</li>
+                                    <li>User Personas and Business Requirements</li>
+                                    <li>Mobile-first and Responsive Design</li>
+                                    <li>Information Architecture and User Flows</li>
+                                    <li>Iterative Wireframing and Prototyping</li>
+                                    <li>Usability and Preference Testing</li>
+                                    <li>Design Documentation and Presentation</li>
+                                </ul>
+                            </div>
+                        
+                            <div>
+                                <h4>Tools I use</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>LucidChart</li>
+                                    <li>Google Forms</li>
+                                    <li>Zoom</li>
+                                    <li>Loom</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <h3>Tools I use</h3>
-                            <ul>
-                                <li>Figma</li>
-                                <li>LucidChart</li>
-                                <li>Google Forms</li>
-                                <li>Zoom</li>
-                                <li>Loom</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
