@@ -12,6 +12,7 @@ main {
 }
 
 footer {
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -215,7 +216,7 @@ svg {
 
 .smlogo {
     width: 100%;
-    max-width: 20%;
+    max-width: 25%;
     height: auto;
 }
 
@@ -242,6 +243,10 @@ footer {
 
     body {
         font-size: 18px;
+    }
+
+    h1 {
+        font-size: 1.75em;
     }
 
     #hero span {
@@ -326,27 +331,31 @@ footer {
     border-radius: 20px;
 }
 
-@keyframes fg-change {
-    0% {fill:#fdbc71;}
-    50%{fill:#c0aaff;}
-    100% {fill:#aae4ff;}
-}
-
-.circle-1{
-    animation: 5s fg-change infinite alternate linear;
-}
-
 @keyframes bg-change {
     0% {fill:#fedba7;}
     50%{fill:#a363a5;}
     100% {fill:#6389a5;}
 }
 
-.background-1{
-    animation: 5s bg-change alternate linear;
+.background-1 rect{
+    animation: 5s bg-change infinite alternate linear;
 }
-/*color changes not showing*/
 
+@keyframes fg-change { 
+    0% {fill:#fdbc71;}
+    50%{fill:#c0aaff;}
+    100% {fill:#aae4ff;}
+}
+
+@keyframes circle-move {
+    from {transform: translate(0,100px);}
+    to {transform: translate(0,700px);}
+}
+
+.circle-1 circle{ /* is it possible to have both animations at the same time? color change and movement*/
+    animation: 5s fg-change infinite alternate linear;
+    animation: 5s circle-move infinite alternate linear;
+}
 
 /*@keyframes color-change {
     0% {fill: #edc655;}
