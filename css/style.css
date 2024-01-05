@@ -1,14 +1,18 @@
 header {
-    background-color: #064343;
-    text-align: center;
-    padding: 10px 0;
+    background-color: hsl(180, 84%, 14%);
+    /*text-align: center;*/
+    padding: 10px 10px 4px;
     position: fixed;
     width: 100%;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3); 
     }
 
 main {
-    padding-top: 100px;
+    padding-top: 54px;
+}
+
+#about-page {
+    padding-top: 120px;
 }
 
 footer {
@@ -34,9 +38,10 @@ h1, h2, h3, h4 {
 }
 
 h1{
-    font-size: 2.75em;
+    font-size: 2.55em;
     font-weight: 700;
     color: #e3af5c;
+    text-align: center;
 }
 
 h2{
@@ -56,6 +61,7 @@ h4{
     font-size: 1.35em;
     font-weight: 400;
     color: #fbf9ea; /* #EB9F9F */
+    text-align: center;
 }
 
 img {
@@ -141,6 +147,21 @@ a:active { /* selected link */
     /* margin: 0 ; */
 }
 
+.container-2 {
+    padding: 20px 0 0;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#ad_astra_project span {
+    display: block;
+    h1 {
+        font-size: 1.00 em;
+    }
+    text-align: center;
+}
+
 .box.box-1 {
     margin: 0 auto;
 }
@@ -158,8 +179,7 @@ a:active { /* selected link */
 }
 
 #hero {
-    background-color: 064343;
-    padding: 20px 0;
+    padding: 20px 0 0;
     display: inline-block;
     width: 100%;
     text-align:center;
@@ -176,19 +196,14 @@ a:active { /* selected link */
     max-width: 250px;
 }
 
-nav {
-    display: inline-block;
-    width: 100%;
-}
 
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-nav > ul > li {
-    display: inline-block;
-}
+
 
 nav > ul > li > a { 
     padding: 0 15px;
@@ -203,20 +218,50 @@ nav > ul > li > a:focus {
     text-decoration: underline;
 }
 
-/*nav> ul > li > a:visited {
-    color: #eb9f9f;
-} turns nav links pink? */
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;*/
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid; 
+    border-color: #fbf9ea;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+/*how do I make a_ hover or focus show in the nav? NOT visited*/
+/*putting .nav info in different order changes what appears*/
 
 svg {
     display: inline-block;
     width: 100%;
     max-width: 15%;
-    height: auto; /* any other fixes? inline-block or scale depending on screen? make child or parent (footer)? not sure */
+    height: auto; 
 }
 
 .smlogo {
     width: 100%;
-    max-width: 25%;
+    max-width: 150px; /*25%*/
     height: auto;
 }
 
@@ -225,7 +270,11 @@ footer {
     text-align: center;
 }
 
-@media only screen and (min-width: 640px) { /* medium devices 640px and larger) */
+@media only screen and (min-width: 641px) { /* medium devices 640px and larger) */
+    .smlogo {
+        max-width: 25%;
+    }
+    
     header {
         text-align: unset; /* unset: rests property to initial (original) value*/
         padding: 20px 20px 13px 20px;
@@ -237,6 +286,22 @@ footer {
         margin-top: 0;
     }
 
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display:none;
+    }
+
     main {
         padding-top: 70px;
     }
@@ -246,11 +311,14 @@ footer {
     }
 
     h1 {
-        font-size: 1.75em;
+        font-size: 1.00 em;
     }
 
     #hero span {
         display: block;
+        h1 {
+            font-size: 1.00 em;
+        }
     }
 
     #about h2 {
@@ -353,8 +421,7 @@ footer {
 }
 
 .circle-1 circle{ /* is it possible to have both animations at the same time? color change and movement*/
-    animation: 5s fg-change infinite alternate linear;
-    animation: 5s circle-move infinite alternate linear;
+    animation: 5s fg-change infinite alternate linear, 5s circle-move infinite alternate linear;
 }
 
 /*@keyframes color-change {
@@ -389,7 +456,7 @@ footer {
   /*circle behind*/
   /* only showing in the middle, not over links- taken out for now*/
 
-  /*div.circlebehind a:before, div.circlebehind a:after 
+  div.circlebehind a:before, div.circlebehind a:after 
   {
     position: absolute;
     top: 22px;
@@ -420,6 +487,3 @@ footer {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
   }
-*/
-  
-
