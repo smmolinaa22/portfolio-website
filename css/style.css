@@ -13,6 +13,9 @@ main {
 
 #about-page {
     padding-top: 120px;
+    h4 {
+        text-align:left;
+    }
 }
 
 footer {
