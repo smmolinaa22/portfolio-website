@@ -1,5 +1,5 @@
 header {
-    background-color: hsl(180, 84%, 14%);
+    background-color: #064242;
     /*text-align: center;*/
     padding: 10px 10px 4px;
     position: fixed;
@@ -9,18 +9,18 @@ header {
 
 main {
     padding-top: 54px;
-}
-
-#about-page {
-    padding-top: 120px;
-    h4 {
-        text-align: left;
-    }
+    padding-bottom: 30px;
 }
 
 footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1A1919;
+    text-align: center;
+}
+
+footer h1 {
+    color: #da8521;
 }
 
 *{
@@ -35,7 +35,7 @@ body{
     color: #fbf9ea;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
 }
@@ -44,15 +44,17 @@ h1{
     font-family: 'Bungee Inline', sans-serif;
     font-size: 2.50em;
     font-weight: 400;
-    color: hsl(180, 84%, 14%); /*#064343*/
+    color: #064242; /*#064343*/
     text-align: center;
+    line-height: 1.0;
 }
 
 h2{
     font-size: 2.00em;
     font-weight: 600;
     color: #fbf9ea;
-    text-align: center;                                  
+    text-align: center;
+    margin: 0;                                 
 }
 
 h3{
@@ -74,19 +76,12 @@ img {
     display: inline-block;
 }
 
-#waves {
-    main {
-        padding-top: 20px;
-    }
-    h1 {
-        color: #fbf9ea;
-    }
+.social-media a{
+    padding: 0 10px;
 }
 
-#adastra {
-    h1 {
-        color: #fbf9ea;
-    }
+.social-media {
+    padding: 20px;
 }
 
 a{ 
@@ -108,7 +103,7 @@ a:active { /* selected link */
     color: #eb9f9f; 
 }
 
-.button{ 
+.button, .button.resume { 
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     background-color: #fbf9ea;
@@ -124,20 +119,23 @@ a:active { /* selected link */
 }
 
 .button:hover,
-.button:visited {
+.button:visited,
+.button.resume:hover,
+.button.resume:visited {
     opacity: 0.8;
     color: #313030;
     text-decoration: none;
 }
 
-.button:active {
+.button:active,
+.button.resume:active {
     opacity: .4;
     text-decoration: none;
 }
 
 .button.contact {
     background-color: #718F4D;
-    color: #fbf9ea;
+    color: #1A1919;
     text-transform: uppercase;
     border-bottom: 4px solid #e3af5c;
 }
@@ -152,10 +150,73 @@ a:active { /* selected link */
 
 /* Layout styling */
 
+#about-page h2 {
+    font-family: 'Bungee Inline', sans-serif;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#about-page {
+    padding-top: 120px;
+}
+
+#about-page h4 {
+    text-align: left;
+}
+
+#waves_project {
+    padding-top: 120px;
+}
+
+#ad_astra_project {
+    padding-top: 120px;
+}
+
+#adastra h1 {
+    color: #fbf9ea;
+}
+
+#adastra h3 {
+    text-align: center;
+}
+
+#adastra h4 {
+    text-align: left;
+}
+
+#adastra main {
+    padding-top: 20px;
+}
+
+#ad_astra_project span {
+    display: block;
+    text-align: center;
+}
+
+#ad_astra_project h1 {
+    font-size: 1.00 em;
+}
+
+#waves h1 {
+    color: #fbf9ea;
+}
+
+#waves h4 {
+    text-align: left;
+} 
+
+#waves h3 {
+    text-align: center;
+}
+
+#waves main {
+    padding-top: 20px;
+}
 
 .container-1 {
     background-color: #064343;
     max-width: 1200px;
+    padding-top: 20px;
     padding: 12px;
     padding-bottom: 20px;
     border: 8px solid #536c33;
@@ -168,20 +229,15 @@ a:active { /* selected link */
     /* margin: 0 ; */
 }
 
+.row h1 {
+    color: #fbf9ea;
+}
+
 .container-2 {
-    padding: 20px 0 0;
+    padding: 0;
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
-}
-
-
-#ad_astra_project span {
-    display: block;
-    h1 {
-        font-size: 1.00 em;
-    }
-    text-align: center;
 }
 
 .box.box-1 {
@@ -192,8 +248,8 @@ a:active { /* selected link */
     margin: 25px 0;
 }
 
-#work .row, #about .row, #waves .row, #final .row, #adastra .row {
-    padding-bottom:25px; border-bottom: 1px solid #4a4a4a;
+.row-1, #about .row, #waves .row, #final .row, #adastra .row  {
+    padding-bottom:25px; border-bottom: 1px solid #718F4D;
 }
 
 #work {
@@ -218,14 +274,11 @@ a:active { /* selected link */
     max-width: 250px;
 }
 
-
 nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
-
 
 nav > ul > li > a { 
     padding: 0 15px;
@@ -249,7 +302,7 @@ nav > ul > li > a:focus {
     right: 0;
     top: 2px;
     font-size: 20px;
-    padding-right: 0;*/
+    padding-right: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -287,17 +340,76 @@ svg {
     height: auto;
 }
 
-footer {
-    h1 {
-        color: #DA8521;
-    }
-    background-color: #1A1919;
+.prototype {
     text-align: center;
+}
+
+.no-line {
+    border-bottom: 0 !important;
+} /*or .row.no-line*/
+
+.i-frame {
+    text-align: center;
+    /* margin: 0 auto; add iframe class to waves as well*/
+}
+
+@media only screen and (min-width:375px) { /*small devices, i.e. iphoneSE*/
+    main {
+        padding-top: 20px;
+    }
+
+    .prototype {
+        max-width: 305px;
+        max-height: 650px;
+    }
+
+    #about-page {
+        padding-top: 60px;
+    }
+
+    #about-page h3{
+        text-align: center;
+    }
+
+    #hero span {
+        display: block;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .col-lg-7.line {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #718F4D;
+    }
+
+    #work .row-1, #about .row, #waves .row, #final .row, #adastra .row {
+        padding-bottom:25px; 
+        padding-top: 25px;
+        border-bottom: 1px solid #718F4D;
+    }
+    
+    #ad_astra_project {
+        padding-top: 60px;
+    }
+    
+    #waves_project {
+        padding-top: 60px;
+    }
+
+    #story.row-1 {
+        border-bottom: 0;
+    }
+
+    
 }
 
 @media only screen and (min-width: 641px) { /* medium devices 640px and larger) */
     .smlogo {
         max-width: 25%;
+    }
+
+    #about-page h3{
+        text-align: left;
     }
     
     header {
@@ -341,14 +453,22 @@ footer {
 
     #hero span {
         display: block;
-        h1 {
-            font-size: 1.00 em;
-        }
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #hero h1 {
+        font-size: 1.00 em;
     }
 
     #about h2 {
         text-align: center;
     }
+
+    #about-page {
+        padding-top: 120px;
+    }
+
 
    /*  #about container-1 {
         margin-top: 100px;
@@ -363,10 +483,31 @@ footer {
         padding: 10px;
     }
 
-    .row::after {
+    .row-1,.no-line::after {
         content: "";
         clear: both;
         display: table;
+    }
+
+    .button.resume {
+        font-size: 18px;
+    }
+
+    .prototype {
+        max-width: 550px;
+        max-width: 700px;
+    }
+
+    #ad_astra_project {
+        padding-top: 100px;
+    }
+    
+    #waves_project {
+        padding-top: 100px;
+    }
+
+    .col-lg-7.line {
+        border-bottom: 0;
     }
 
 }
@@ -375,7 +516,7 @@ footer {
     body {
         font-size: 20px;
     }
-    
+
     .col-lg-5 {
         width: 40%;
     }
@@ -403,33 +544,23 @@ footer {
         max-width: 90px;
     }
 
-    /*h1{
-        font-size: 3.00em;
+    .button.resume {
+        font-size: 1.15em;
     }
-    
-    h2{
-        font-size: 2.5em;                               
-    }
-    
-    h3{
-        font-size: 2.15em;
-    }
-    
-    h4{
-        font-size: 1.75em;
-    }*/
 
+    #ad_astra_project {
+        padding-top: 120px;
+    }
+    
+    #waves_project {
+        padding-top: 120px;
+    }
 
 }
 
 @media only screen and (min-width: 1440px) { /*XL devices 1440 px or larger*/
 
 }
-
-/* .berlin-illustration { svg class NOT id
-    width: 100%;
-    max-width: 100%;
-    height: auto; } */
 
 
 .circle-illustration {
@@ -460,42 +591,10 @@ footer {
     to {transform: translate(0,700px);}
 }
 
-.circle-1 circle{ /* is it possible to have both animations at the same time? color change and movement*/
+.circle-1 circle{ 
     animation: 5s fg-change infinite alternate linear, 5s circle-move infinite alternate linear;
 }
-
-/*@keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
-  }
-
-  .sun {
-    animation: 4s color-change infinite alternate linear; 
-    /* duration, name, iteration count, direction, timing function
-  
-
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
-
-  .cloud-front {
-    animation:15s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse { 
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px,48px);}
-  }
-
-  .cloud-back {
-    animation: 30s cloud-move-reverse infinite alternate linear;
-  }
-
-  /*circle behind*/
-  /* only showing in the middle, not over links- taken out for now*/
-
+/*
   div.circlebehind a:before, div.circlebehind a:after 
   {
     position: absolute;
@@ -527,3 +626,4 @@ footer {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
   }
+*/
