@@ -400,6 +400,10 @@ svg {
         border-bottom: 0;
     }
 
+    img.socialsvg {
+        max-width: 17%;
+    }
+
     
 }
 
@@ -508,6 +512,10 @@ svg {
 
     .col-lg-7.line {
         border-bottom: 0;
+    }
+
+    img.socialsvg {
+        max-width: 100px;
     }
 
 }
